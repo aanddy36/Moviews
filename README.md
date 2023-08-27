@@ -1,8 +1,19 @@
-# React + Vite
+# Moviews
+## Description
+Movie searcher done using the open-source [OMDb API](https://www.omdbapi.com/).
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+You have a search bar in which you will type the name of the movie. Each character added (or removed) will trigger a new API request.
 
-Currently, two official plugins are available:
+In the left container the results will appear with the most basic info (name, poster and year). When you click one of them the details of that movie will appear in the right container (description, actors, directors, genres, IMDb rating).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Technologies used
+- React
+- JavaScript
+- CSS
+
+## Concepts Applied
+- ***Data fetching*** from external API
+- ***Custom Hook*** for data fetching
+- Responsive for all devices
+- ***Hooks***: useState, useEffect, useRef.
