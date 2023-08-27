@@ -13,7 +13,7 @@ export const MovieDetails = ({id, onCloseMovie}) => {
         const getMovieDetails = async ()=>{
             try {
                 setIsLoading(true)
-                const resp = await fetch(`http://www.omdbapi.com/?apikey=${KEY}&i=${id}`)
+                const resp = await fetch(`https://www.omdbapi.com/?apikey=${KEY}&i=${id}`)
                 const data = await resp.json()
                 setMovie(data)
             }catch(err){

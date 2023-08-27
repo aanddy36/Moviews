@@ -10,7 +10,7 @@ export const useSearchMovies = (query) => {
           try{
             setIsLoading(true)
             setError('')
-            const resp = await fetch(`http://www.omdbapi.com/?apikey=${KEY}&s=${query}`, {signal: controller.signal})
+            const resp = await fetch(`https://www.omdbapi.com/?apikey=${KEY}&s=${query}`, {signal: controller.signal})
             if(!resp.ok){
               throw new Error("Something went wrong")
             }
