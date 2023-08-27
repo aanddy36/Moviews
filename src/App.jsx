@@ -1,10 +1,7 @@
 import { useEffect, useState } from "react";
-import { tempMovieData, tempWatchedData } from "./tempData";
 import { NavBar } from "./components/NavBar";
 import { Box } from "./components/Box";
 import { Movie } from "./components/Movie";
-import { WatchedSummary } from "./components/WatchedSummary";
-import { WatchedMovie } from "./components/WatchedMovie";
 import {MovieDetails} from "./components/MovieDetails"
 import {useSearchMovies} from "./useSearchMovies"
 //1. ARREGLAR RESPONSIVENESS
@@ -13,7 +10,6 @@ import {useSearchMovies} from "./useSearchMovies"
 const KEY = "8d9cf5ef"
 function App() {
   const [query, setQuery] = useState("");
-  const [watched, setWatched] = useState(tempWatchedData);
   const [selectedId, setSelectedId] = useState(null)
   const {movies, isLoading,error} = useSearchMovies(query)
   useEffect(()=>console.log(movies),[movies])
