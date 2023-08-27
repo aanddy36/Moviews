@@ -236,7 +236,7 @@ body {
   .box{
     min-height: 400px;
     max-height: 400px;
-    min-width: 100%;
+    width: 100%;
   }
   .details section{
     padding: 4rem 2rem;
