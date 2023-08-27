@@ -12,7 +12,6 @@ function App() {
   const [query, setQuery] = useState("");
   const [selectedId, setSelectedId] = useState(null)
   const {movies, isLoading,error} = useSearchMovies(query)
-  useEffect(()=>console.log(movies),[movies])
 
   const handleSelectMovie = (id)=>{
     setSelectedId(prev=>{
